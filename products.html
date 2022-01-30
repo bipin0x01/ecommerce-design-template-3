@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set the title of Webpage -->
+    <title>Products - BaddaShopping</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<!-- Inline CSS -->
+<style>
+    * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+  }
+
+  footer{       /* Set the footer to fixed position */
+  width: 100%;          /* Set the footer to bottom of the page */
+  left: 0;      /* Position the footer at the bottom of the page */
+  bottom: 0;    /* Position the footer at the bottom of the page */
+  }
+  
+</style>
+<body>
+
+    <!-- Navbar Start-->
+    <div class="nav">
+        <!-- Use of class and id attributes for CSS elements -->
+        <div class="nav-header">
+          <div class="nav-title">
+            <a href="./index.html" style="text-decoration: none;color: white;">BaddaShopping</a>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="./products.html">Products</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./research.html">Research</a>
+          <a href="./contact-us.html">Contact Us</a>
+        </div>
+        <button class="sign-btn" onclick="document.getElementById('id01').style.display='block'">
+            Sign In</button>
+      </div>
+      </div>
+    <!-- Navbar End -->
+
+            <!-- The Modal -->
+            <div id="id01" class="modal">
+                <span onclick="closemodal()" class="close" title="Close Modal">&times;</span>
+        
+                <!-- Modal Content -->
+                <form class="modal-content animate" action="#">
+                    <div class="imgcontainer">
+                    <img src="./assets/img/misc/avatar.png" alt="Avatar" class="avatar">
+                    </div>
+        
+                    <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+        
+                    <label for="psw"><b>Password</b></label><br>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+                    <button type="submit">Login</button><br>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                    </div>
+        
+                    <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="closemodal()" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+                </div>
+    <!-- Main Content -->
+        
+        <!-- Products -->
+
+        <section class="products page">
+            <div class="latest-products">
+                <div class="products-page-title">Latest Products</div>
+                <ul class="breadcrumb">
+                    <li><a href="./index.html">Home</a></li>
+                    <li>Products</li>
+                  </ul>
+                <div class="products-collection">
+                    <!-- Product Card -->
+                <div class="product-card">
+                    <img src="./assets/img/products/webcam.webp" alt="">
+                    <div class="product-card-info">
+                        <h3>Webcam</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat!</p>
+                        <div style="display: flex;">
+                            <div class="price-tag">NRs. 18000</div>
+                            <div class="buy-btn">
+                                Buy Now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./assets/img/products/Projector.jpg" alt="">
+                    <div class="product-card-info">
+                        <h3>Projector</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat!</p>
+                        <div style="display: flex;">
+                            <div class="price-tag">NRs. 18000</div>
+                            <div class="buy-btn">
+                                Buy Now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card -->
+                <div class="product-card">
+                    <img src="./assets/img/products/joystick.jpg" alt="">
+                    <div class="product-card-info">
+                        <h3>Joystick</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat!</p>
+                        <div style="display: flex;">
+                            <div class="price-tag">NRs. 1000</div>
+                            <div class="buy-btn">
+                                Buy Now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card -->
+                <div class="product-card">
+                    <img src="./assets/img/products/Massager.jpg" alt="">
+                    <div class="product-card-info">
+                        <h3>Electronic Massager</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat!</p>
+                        <div style="display: flex;">
+                            <div class="price-tag">NRs. 1200</div>
+                            <div class="buy-btn">
+                                Buy Now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="products-collection">
+                    <!-- Product Card -->
+                <div class="product-card">
+                    <img src="./assets/img/products/pendrive.jpg" alt="">
+                    <div class="product-card-info">
+                        <h3>Pendrive</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat!</p>
+                        <div style="display: flex;">
+                            <div class="price-tag">NRs. 3000</div>
+                            <div class="buy-btn">
+                                Buy Now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card -->
+                <div class="product-card">
+                    <img src="./assets/img/products/charger.jpg" alt="">
+                    <div class="product-card-info">
+                        <h3>Charger</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat!</p>
+                        <div style="display: flex;">
+                            <div class="price-tag">NRs. 800</div>
+                            <div class="buy-btn">
+                                Buy Now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card -->
+                <div class="product-card">
+                    <img src="./assets/img/products/lamp.jpg" alt="">
+                    <div class="product-card-info">
+                        <h3>Study Lamp</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat!</p>
+                        <div style="display: flex;">
+                            <div class="price-tag">NRs. 7000</div>
+                            <div class="buy-btn">
+                                Buy Now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card -->
+                <div class="product-card">
+                    <img src="./assets/img/products/camera.jpg" alt="">
+                    <div class="product-card-info">
+                        <h3>Camera</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat!</p>
+                        <div style="display: flex;">
+                            <div class="price-tag">NRs. 100000</div>
+                            <div class="buy-btn">
+                                Buy Now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="products-collection">
+                    <!-- Product Card -->
+                <div class="product-card">
+                    <img src="./assets/img/products/dishwasher.jpg" alt="">
+                    <div class="product-card-info">
+                        <h3>Dishwasher</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat!</p>
+                        <div style="display: flex;">
+                            <div class="price-tag">NRs. 90000</div>
+                            <div class="buy-btn">
+                                Buy Now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card -->
+                <div class="product-card">
+                    <img src="./assets/img/products/trimmer.jfif" alt="">
+                    <div class="product-card-info">
+                        <h3>Trimmer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat!</p>
+                        <div style="display: flex;">
+                            <div class="price-tag">NRs. 1000</div>
+                            <div class="buy-btn">
+                                Buy Now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card -->
+                <div class="product-card">
+                    <img src="./assets/img/products/heater.webp" alt="">
+                    <div class="product-card-info">
+                        <h3>Heater</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat!</p>
+                        <div style="display: flex;">
+                            <div class="price-tag">NRs. 3000</div>
+                            <div class="buy-btn">
+                                Buy Now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card -->
+                <div class="product-card">
+                    <img src="./assets/img/products/headphones-music-ear-defender-yellow.jpg" alt="">
+                    <div class="product-card-info">
+                        <h3>Product Name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quaerat!</p>
+                        <div style="display: flex;">
+                            <div class="price-tag">NRs. 3000</div>
+                            <div class="buy-btn">
+                                Buy Now
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- Products End -->
+    <!-- Main Content End -->
+
+    <!-- For Internal CSS -->
+    <section class="gototop">
+        <div class="gototop-btn">
+            <a href="#top">
+                <img class="goto-top-img" src="./assets/img/misc/top_arrow.png" alt="">
+            </a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <!-- Footer End -->
+    <footer>
+        <!-- Use of inline CSS -->
+        <p class="text-center" style="text-align: center;">Copyright &copy; BaddaShopping 2019-2022<br>
+            Follow Us at <a href="https://www.facebook.com/BaddaShopping">facebook</a></p>
+        </footer>
+
+    <!-- External JS -->
+    <script src="./assets/js/script.js"></script>
+    <!-- Inline JS -->
+    <script>
+        
+    </script>
+</body>
+
+</html>

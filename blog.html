@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set the title of Webpage -->
+    <title>Blogs - BaddaShopping</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<!-- Inline CSS -->
+<style>
+    * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+  }
+
+  footer{       /* Set the footer to fixed position */
+  width: 100%;          /* Set the footer to bottom of the page */
+  left: 0;      /* Position the footer at the bottom of the page */
+  bottom: 0;    /* Position the footer at the bottom of the page */
+  }
+  
+</style>
+<body>
+
+    <!-- Navbar Start-->
+    <div class="nav">
+        <!-- Use of class and id attributes for CSS elements -->
+        <div class="nav-header">
+          <div class="nav-title">
+            <a href="./index.html" style="text-decoration: none;color: white;">BaddaShopping</a>
+          </div>
+        </div>        
+        <div class="nav-links">
+          <a href="./products.html">Products</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./research.html">Research</a>
+          <a href="./contact-us.html">Contact Us</a>
+        </div>
+        <button class="sign-btn" onclick="document.getElementById('id01').style.display='block'">
+            Sign In</button>
+      </div>
+    <!-- Navbar End -->
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+        <span onclick="closemodal()" class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-content animate" action="#">
+            <div class="imgcontainer">
+            <img src="./assets/img/misc/avatar.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label><br>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button><br>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="closemodal()" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+        </div>
+<section class="blog-page page">
+    <div class="page-title">Blogs</div>
+        <ul class="breadcrumb">
+            <li><a href="./index.html">Home</a></li>
+            <li>Blogs</li>
+          </ul>
+    <div class="blogs-collection">
+        <div class="blog-container">
+            <div class="blog-item">
+                <div class="blog-item-img">
+                    <img src="./assets/img/homepage-banner.png" alt="">
+                </div>
+                <div class="blog-item-content">
+                    <div class="blog-item-title">
+                        <h3>How to make a website?</h3>
+                    </div>
+                    <div class="blog-item-desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisqu consectetur adipisicing elit. Quisquam, quos, qu
+                            </p>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="blog-container">
+            <div class="blog-item">
+                <div class="blog-item-img">
+                    <img src="./assets/img/homepage-banner.png" alt="">
+                </div>
+                <div class="blog-item-content">
+                    <div class="blog-item-title">
+                        <h3>How to make a website?</h3>
+                    </div>
+                    <div class="blog-item-desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisqu consectetur adipisicing elit. Quisquam, quos, qu
+                            </p>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="blog-container">
+            <div class="blog-item">
+                <div class="blog-item-img">
+                    <img src="./assets/img/homepage-banner.png" alt="">
+                </div>
+                <div class="blog-item-content">
+                    <div class="blog-item-title">
+                        <h3>How to make a website?</h3>
+                    </div>
+                    <div class="blog-item-desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisqu consectetur adipisicing elit. Quisquam, quos, qu
+                            </p>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="blog-container">
+            <div class="blog-item">
+                <div class="blog-item-img">
+                    <img src="./assets/img/homepage-banner.png" alt="">
+                </div>
+                <div class="blog-item-content">
+                    <div class="blog-item-title">
+                        <h3>How to make a website?</h3>
+                    </div>
+                    <div class="blog-item-desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisqu consectetur adipisicing elit. Quisquam, quos, qu
+                            </p>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="blog-container">
+            <div class="blog-item">
+                <div class="blog-item-img">
+                    <img src="./assets/img/homepage-banner.png" alt="">
+                </div>
+                <div class="blog-item-content">
+                    <div class="blog-item-title">
+                        <h3>How to make a website?</h3>
+                    </div>
+                    <div class="blog-item-desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisqu consectetur adipisicing elit. Quisquam, quos, qu
+                            </p>
+                    </div>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+</section>
+    <!-- Main Content -->
+    <!-- Main Content End -->
+
+    <!-- For Internal CSS -->
+    <section class="gototop">
+        <div class="gototop-btn">
+            <a href="#top">
+                <img class="goto-top-img" src="./assets/img/misc/top_arrow.png" alt="">
+            </a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <!-- Footer End -->
+    <footer>
+        <!-- Use of inline CSS -->
+        <p class="text-center" style="text-align: center;">Copyright &copy; BaddaShopping 2019-2022<br>
+            Follow Us at <a href="https://www.facebook.com/BaddaShopping">facebook</a></p>
+        </footer>
+
+    <!-- External JS -->
+    <script src="./assets/js/script.js"></script>
+    <!-- Inline JS -->
+    <script>
+        
+    </script>
+</body>
+
+</html>
